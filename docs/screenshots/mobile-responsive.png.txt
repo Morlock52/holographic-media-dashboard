@@ -1,0 +1,20 @@
+PLACEHOLDER: mobile-responsive.png
+
+This screenshot should show:
+- Mobile portrait view (390x844 or similar)
+- Responsive navigation (hamburger menu or bottom nav)
+- Simplified media card layout
+- Touch-friendly interface elements
+- Reduced particle effects for performance
+- Single column layout
+- Larger touch targets
+- Simplified 3D effects
+- Mobile-optimized controls
+- Swipe gestures indicated
+
+Recommended capture settings:
+- Resolution: 390x844 (iPhone 14/15 size)
+- Chrome DevTools mobile emulation
+- Touch simulation enabled
+- Show menu expanded or gesture in action
+- Performance-optimized view

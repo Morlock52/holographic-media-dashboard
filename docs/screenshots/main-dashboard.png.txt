@@ -1,0 +1,17 @@
+PLACEHOLDER: main-dashboard.png
+
+This screenshot should show:
+- Full dashboard view with all sections visible
+- 3D holographic media cards floating in space
+- Particle effects and data flow visualization
+- Left sidebar with navigation
+- System statistics in the corner
+- Activity feed on the right
+- WebGL effects enabled (bloom, glow)
+
+Recommended capture settings:
+- Resolution: 1920x1080
+- Browser: Chrome/Edge with hardware acceleration
+- All effects enabled
+- Dark theme active
+- Some media cards in hover state to show interactivity
