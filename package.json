@@ -1,15 +1,15 @@
 {
   "name": "holographic-media-dashboard",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "A futuristic 3D holographic media server dashboard with WebGL effects, real-time visualization, and immersive UI",
   "main": "demo-server.js",
-  "homepage": "https://github.com/yourusername/holographic-media-dashboard",
+  "homepage": "https://github.com/morlock52/holographic-media-dashboard",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/holographic-media-dashboard.git"
+    "url": "https://github.com/morlock52/holographic-media-dashboard.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/holographic-media-dashboard/issues"
+    "url": "https://github.com/morlock52/holographic-media-dashboard/issues"
   },
   "scripts": {
     "start": "node demo-server.js",
@@ -41,14 +41,14 @@
     "media-management"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com",
-    "url": "https://github.com/yourusername"
+    "name": "Morlock52",
+    "email": "noreply@morlock52.dev",
+    "url": "https://github.com/morlock52"
   },
   "contributors": [
     {
       "name": "Community Contributors",
-      "url": "https://github.com/yourusername/holographic-media-dashboard/graphs/contributors"
+      "url": "https://github.com/morlock52/holographic-media-dashboard/graphs/contributors"
     }
   ],
   "license": "MIT",
