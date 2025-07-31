@@ -3,7 +3,11 @@
 A futuristic 3D holographic media server dashboard built with Three.js, WebGL, and WebSockets for real-time monitoring and control.
 
 <div align="center">
-  <img src="docs/screenshots/main-dashboard.png" alt="Holographic Dashboard Main View" width="100%">
+  <img src="https://psscript.morloksmaze.com/screenshots/hero-image.png" alt="Holographic Dashboard Hero" width="100%">
+</div>
+
+<div align="center">
+  <img src="https://psscript.morloksmaze.com/screenshots/main-dashboard.png" alt="Holographic Dashboard Main View" width="100%">
   <p><em>Experience the future of media server interfaces with true 3D holographic visualization</em></p>
 </div>
 
@@ -32,25 +36,25 @@ A futuristic 3D holographic media server dashboard built with Three.js, WebGL, a
 
 ### Main Dashboard Interface
 <div align="center">
-  <img src="docs/screenshots/main-dashboard.png" alt="Main Dashboard View" width="80%">
+  <img src="https://psscript.morloksmaze.com/screenshots/main-dashboard.png" alt="Main Dashboard View" width="80%">
   <p><em>The main dashboard showcasing all media types, system stats, and 3D holographic effects</em></p>
 </div>
 
 ### Timeline & Activity Feed
 <div align="center">
-  <img src="docs/screenshots/timeline-page.png" alt="Timeline Activity Feed" width="80%">
+  <img src="https://psscript.morloksmaze.com/screenshots/timeline-page.png" alt="Timeline Activity Feed" width="80%">
   <p><em>Real-time activity timeline with WebSocket updates and smooth animations</em></p>
 </div>
 
 ### Stack Monitor
 <div align="center">
-  <img src="docs/screenshots/stack-monitor.png" alt="Stack Monitor View" width="80%">
+  <img src="https://psscript.morloksmaze.com/screenshots/stack-monitor.png" alt="Stack Monitor View" width="80%">
   <p><em>System stack monitoring with CPU, GPU, memory, and bandwidth visualization</em></p>
 </div>
 
 ### Configuration Interface
 <div align="center">
-  <img src="docs/screenshots/configuration-page.png" alt="Configuration Settings" width="80%">
+  <img src="https://psscript.morloksmaze.com/screenshots/configuration-page.png" alt="Configuration Settings" width="80%">
   <p><em>Customize visual effects, performance settings, and WebSocket connections</em></p>
 </div>
 
@@ -59,11 +63,11 @@ A futuristic 3D holographic media server dashboard built with Three.js, WebGL, a
   <table>
     <tr>
       <td width="50%">
-        <img src="docs/screenshots/mobile-responsive.png" alt="Mobile Responsive View" width="100%">
+        <img src="https://psscript.morloksmaze.com/screenshots/mobile-responsive.png" alt="Mobile Responsive View" width="100%">
         <p align="center"><em>Fully responsive mobile interface</em></p>
       </td>
       <td width="50%">
-        <img src="docs/screenshots/3d-effects-showcase.png" alt="3D Effects Showcase" width="100%">
+        <img src="https://psscript.morloksmaze.com/screenshots/3d-effects-showcase.png" alt="3D Effects Showcase" width="100%">
         <p align="center"><em>Stunning 3D holographic effects</em></p>
       </td>
     </tr>
