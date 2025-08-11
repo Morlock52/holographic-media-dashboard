@@ -534,9 +534,16 @@
     </div>
 
     <!-- Include API Client -->
-    <script src="../api/api-client.js"></script>
+    <script src="js/chatbot-api-client.js"></script>
 
     <script>
+        // Dummy loading manager to prevent errors
+        const loadingManager = {
+            setLoading: (id, isLoading, message) => {
+                console.log(`Mock loadingManager: setLoading called for ${id} - ${isLoading} (${message || ''})`);
+            }
+        };
+
         // Configuration
         const API_ENDPOINT = '/api/chat';
         const MAX_MESSAGES_PER_MINUTE = 10;

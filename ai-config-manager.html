@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🤖 AI Config Manager - Holographic Edition</title>
     
-    <!-- External Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <!-- External Libraries (Removed due to network restrictions) -->
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1112,21 +1109,25 @@ GRAFANA_PASSWORD=changeme
         
         // Generate API key
         function generateApiKey() {
-            const key = Array.from(crypto.getRandomValues(new Uint8Array(32)))
-                .map(b => b.toString(16).padStart(2, '0'))
-                .join('');
+            const charset = 'abcdef0123456789';
+            let key = '';
+            for (let i = 0; i < 64; i++) {
+                key += charset.charAt(Math.floor(Math.random() * charset.length));
+            }
             
             addChatMessage('ai', `Generated API key: <code style="background: rgba(0,0,0,0.5); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: monospace; font-size: 0.85rem; word-break: break-all;">${key}</code>`);
             
-            navigator.clipboard.writeText(key);
+            navigator.clipboard.writeText(key).catch(err => console.warn('Clipboard write failed:', err));
             addChatMessage('ai', '✓ API key copied to clipboard!');
         }
         
         // Regenerate secret
         function regenerateSecret(varName) {
-            const secret = Array.from(crypto.getRandomValues(new Uint8Array(32)))
-                .map(b => b.toString(16).padStart(2, '0'))
-                .join('');
+            const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let secret = '';
+            for (let i = 0; i < 32; i++) {
+                secret += charset.charAt(Math.floor(Math.random() * charset.length));
+            }
             
             document.getElementById(`field-${varName}`).value = secret;
             updateFieldValue(varName, secret);

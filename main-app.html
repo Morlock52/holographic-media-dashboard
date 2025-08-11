@@ -196,7 +196,7 @@
                     <div class="loading-spinner"></div>
                     <p>Loading Media Library...</p>
                 </div>
-                <iframe src="../media-library.html" class="app-iframe" title="Media Library" loading="lazy"></iframe>
+                <iframe src="demo-showcase.html" class="app-iframe" title="Media Library" loading="lazy"></iframe>
             </div>
             
             <!-- Configuration Manager View -->
@@ -232,7 +232,7 @@
                     <div class="loading-spinner"></div>
                     <p>Loading Workflows...</p>
                 </div>
-                <iframe src="../workflow-builder.html" class="app-iframe" title="Workflow Builder" loading="lazy"></iframe>
+                <iframe src="demo-showcase.html" class="app-iframe" title="Workflow Builder" loading="lazy"></iframe>
             </div>
             
             <!-- Health Monitor View -->
@@ -241,7 +241,7 @@
                     <div class="loading-spinner"></div>
                     <p>Loading Health Monitor...</p>
                 </div>
-                <iframe src="../health-monitor.html" class="app-iframe" title="Health Monitor" loading="lazy"></iframe>
+                <iframe src="service-dashboard.html" class="app-iframe" title="Health Monitor" loading="lazy"></iframe>
             </div>
             
             <!-- Documentation View -->
@@ -250,7 +250,7 @@
                     <div class="loading-spinner"></div>
                     <p>Loading Documentation...</p>
                 </div>
-                <iframe src="../documentation.html" class="app-iframe" title="Documentation" loading="lazy"></iframe>
+                <iframe src="docs/README.md" class="app-iframe" title="Documentation" loading="lazy"></iframe>
             </div>
         </div>
     </main>
@@ -396,7 +396,7 @@
         // Initialize navigation manager after DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
             // Register service worker for offline functionality
-            if ('serviceWorker' in navigator) {
+            /* if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.register('/service-worker.js')
                     .then(registration => {
                         console.log('Service Worker registered:', registration);
@@ -406,7 +406,7 @@
                     .catch(error => {
                         console.error('Service Worker registration failed:', error);
                     });
-            }
+            } */
             
             // Listen for navigation events
             window.addEventListener('navigation:navigationstart', (e) => {

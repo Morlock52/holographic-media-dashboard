@@ -6,106 +6,12 @@
     <title>🎬 Holographic Media Dashboard 2025 - 3D Edition</title>
     
     <!-- External Libraries -->
-    <!-- Using older stable version of Three.js that has proper CORS headers -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
-    
-    <!-- Define shims for missing Three.js components -->
-    <script>
-        // Simple OrbitControls shim
-        THREE.OrbitControls = class OrbitControls {
-            constructor(camera, domElement) {
-                this.camera = camera;
-                this.domElement = domElement;
-                this.enabled = true;
-                this.enableDamping = true;
-                this.dampingFactor = 0.05;
-                this.rotateSpeed = 0.002;
-                this.zoomSpeed = 0.5;
-                this.minDistance = 20;
-                this.maxDistance = 200;
-                this.maxPolarAngle = Math.PI * 0.495;
-                
-                let mouseX = 0, mouseY = 0;
-                let targetX = 0, targetY = 0;
-                let radius = 50;
-                let theta = 0;
-                let phi = Math.PI / 4;
-                
-                domElement.addEventListener('mousemove', (e) => {
-                    if (e.buttons === 1) {
-                        const deltaX = e.movementX || 0;
-                        const deltaY = e.movementY || 0;
-                        theta -= deltaX * this.rotateSpeed;
-                        phi = Math.max(0.1, Math.min(Math.PI - 0.1, phi + deltaY * this.rotateSpeed));
-                    }
-                });
-                
-                domElement.addEventListener('wheel', (e) => {
-                    e.preventDefault();
-                    radius = Math.max(this.minDistance, Math.min(this.maxDistance, radius + e.deltaY * 0.1));
-                });
-                
-                this.update = () => {
-                    this.camera.position.x = radius * Math.sin(phi) * Math.cos(theta);
-                    this.camera.position.y = radius * Math.cos(phi);
-                    this.camera.position.z = radius * Math.sin(phi) * Math.sin(theta);
-                    this.camera.lookAt(0, 0, 0);
-                };
-                
-                this.dispose = () => {};
-            }
-        };
-        
-        // Simple EffectComposer shim
-        THREE.EffectComposer = class EffectComposer {
-            constructor(renderer) {
-                this.renderer = renderer;
-                this.passes = [];
-            }
-            addPass(pass) {
-                this.passes.push(pass);
-            }
-            render() {
-                // Simple render without effects
-                if (this.passes.length > 0 && this.passes[0].scene && this.passes[0].camera) {
-                    this.renderer.render(this.passes[0].scene, this.passes[0].camera);
-                }
-            }
-            setSize(width, height) {
-                // Update renderer size
-                this.renderer.setSize(width, height);
-            }
-        };
-        
-        THREE.RenderPass = class RenderPass {
-            constructor(scene, camera) {
-                this.scene = scene;
-                this.camera = camera;
-            }
-        };
-        
-        THREE.UnrealBloomPass = class UnrealBloomPass {
-            constructor() {}
-        };
-        
-        THREE.ShaderPass = class ShaderPass {
-            constructor(shader) {
-                this.uniforms = shader ? shader.uniforms : {};
-                this.material = shader ? new THREE.ShaderMaterial({
-                    uniforms: this.uniforms,
-                    vertexShader: shader.vertexShader,
-                    fragmentShader: shader.fragmentShader
-                }) : null;
-                this.renderToScreen = false;
-                this.enabled = true;
-            }
-        };
-        
-        THREE.CopyShader = {};
-        THREE.LuminosityHighPassShader = {};
-    </script>
+
+    <!-- Local Three.js Libraries -->
+    <script src="js/lib/three.min.js"></script>
+    <script src="js/lib/OrbitControls.js"></script>
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">

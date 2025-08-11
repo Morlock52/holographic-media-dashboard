@@ -117,6 +117,17 @@ class HoloMediaHub {
             setTimeout(() => {
                 targetPage.style.display = 'block';
                 targetPage.classList.add('active');
+
+                // Explicitly hide the loading overlay for this page
+                const loadingOverlay = targetPage.querySelector('.page-loading');
+                if (loadingOverlay) {
+                    loadingOverlay.style.display = 'none';
+                }
+                const iframe = targetPage.querySelector('.app-iframe');
+                if (iframe) {
+                    iframe.style.opacity = '1';
+                }
+
                 setTimeout(() => {
                     targetPage.style.opacity = '1';
                 }, 50);
