@@ -3,12 +3,12 @@
 A futuristic 3D holographic media server dashboard built with Three.js, WebGL, and WebSockets for real-time monitoring and control.
 
 <div align="center">
-  <img src="https://psscript.morloksmaze.com/screenshots/hero-image.png" alt="Holographic Dashboard Hero" width="100%">
+  <img src="docs/screenshots/01_splash_screen.png" alt="Holographic Dashboard Splash Screen" width="100%">
 </div>
 
 <div align="center">
-  <img src="https://psscript.morloksmaze.com/screenshots/main-dashboard.png" alt="Holographic Dashboard Main View" width="100%">
-  <p><em>Experience the future of media server interfaces with true 3D holographic visualization</em></p>
+  <img src="docs/screenshots/02_main_app_shell.png" alt="Holographic Dashboard Application Shell" width="100%">
+  <p><em>A modern, responsive application shell for managing all your media services.</em></p>
 </div>
 
 ## ✨ Features
@@ -34,44 +34,16 @@ A futuristic 3D holographic media server dashboard built with Three.js, WebGL, a
 
 ## 📸 Screenshots
 
-### Main Dashboard Interface
+### Service Dashboard
 <div align="center">
-  <img src="https://psscript.morloksmaze.com/screenshots/main-dashboard.png" alt="Main Dashboard View" width="80%">
-  <p><em>The main dashboard showcasing all media types, system stats, and 3D holographic effects</em></p>
+  <img src="docs/screenshots/03_service_dashboard.png" alt="Service Dashboard" width="80%">
+  <p><em>Monitor and manage all your running services from a single, clean interface.</em></p>
 </div>
 
-### Timeline & Activity Feed
+### AI-Powered Configuration
 <div align="center">
-  <img src="https://psscript.morloksmaze.com/screenshots/timeline-page.png" alt="Timeline Activity Feed" width="80%">
-  <p><em>Real-time activity timeline with WebSocket updates and smooth animations</em></p>
-</div>
-
-### Stack Monitor
-<div align="center">
-  <img src="https://psscript.morloksmaze.com/screenshots/stack-monitor.png" alt="Stack Monitor View" width="80%">
-  <p><em>System stack monitoring with CPU, GPU, memory, and bandwidth visualization</em></p>
-</div>
-
-### Configuration Interface
-<div align="center">
-  <img src="https://psscript.morloksmaze.com/screenshots/configuration-page.png" alt="Configuration Settings" width="80%">
-  <p><em>Customize visual effects, performance settings, and WebSocket connections</em></p>
-</div>
-
-### Mobile Experience
-<div align="center">
-  <table>
-    <tr>
-      <td width="50%">
-        <img src="https://psscript.morloksmaze.com/screenshots/mobile-responsive.png" alt="Mobile Responsive View" width="100%">
-        <p align="center"><em>Fully responsive mobile interface</em></p>
-      </td>
-      <td width="50%">
-        <img src="https://psscript.morloksmaze.com/screenshots/3d-effects-showcase.png" alt="3D Effects Showcase" width="100%">
-        <p align="center"><em>Stunning 3D holographic effects</em></p>
-      </td>
-    </tr>
-  </table>
+  <img src="docs/screenshots/04_ai_config_manager.png" alt="AI Config Manager" width="80%">
+  <p><em>An advanced, AI-assisted editor for managing all your environment variables.</em></p>
 </div>
 
 ## 🛠️ Technology Stack

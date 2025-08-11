@@ -314,10 +314,22 @@
             }
             
             // Test loading performance
-            const navigationTiming = performance.navigation;
-            const timing = performance.timing;
-            const pageLoadTime = timing.loadEventEnd - timing.navigationStart;
-            console.log(`⚡ Page load time: ${pageLoadTime}ms`);
+            window.addEventListener('load', () => {
+                setTimeout(() => { // Use a small timeout to ensure timings are fully settled
+                    const navTiming = performance.getEntriesByType("navigation")[0];
+                    if (navTiming) {
+                        const pageLoadTime = Math.round(navTiming.loadEventEnd);
+                        console.log(`⚡ Page load time: ${pageLoadTime}ms`);
+                    } else {
+                        // Fallback for browsers that might not support it in this context
+                        const timing = performance.timing;
+                        const pageLoadTime = timing.loadEventEnd - timing.navigationStart;
+                        if (pageLoadTime > 0) {
+                            console.log(`⚡ Page load time (fallback): ${pageLoadTime}ms`);
+                        }
+                    }
+                }, 100);
+            });
         });
     </script>
 </body>
